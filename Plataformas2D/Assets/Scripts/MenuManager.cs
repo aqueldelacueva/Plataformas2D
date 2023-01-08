@@ -10,6 +10,21 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadScene("Level0");
     }
 
+    public void BotonLevel0()
+    {
+        SceneManager.LoadScene("Level0");
+    }
+
+    public void BotonLevel1()
+    {
+        SceneManager.LoadScene("Level0");
+    }
+
+    public void BotonGimnasio()
+    {
+        SceneManager.LoadScene("Gimnasio");
+    }
+
     public void BotonSalir()
     {
         Application.Quit();

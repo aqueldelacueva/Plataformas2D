@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class totem : MonoBehaviour
 {
+    private AudioSource audioSource;
+    public AudioClip clip;
     public GameObject item;
     public string target;
 
@@ -11,6 +13,9 @@ public class totem : MonoBehaviour
     {
         if (collision.tag == target)
         {
+            audioSource = GetComponent<AudioSource>();
+            audioSource.clip = clip;
+            audioSource.Play();
             item.SetActive(true);
             gameManager.instance.totem = true;
             Destroy(gameObject);

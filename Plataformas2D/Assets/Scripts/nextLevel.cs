@@ -2,12 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static UnityEngine.GraphicsBuffer;
 
 public class nextLevel : MonoBehaviour
 {
     public string level;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        SceneManager.LoadScene(level);
+        if (collision.tag == "Player")
+        {
+            SceneManager.LoadScene(level);
+        }
     }
 }

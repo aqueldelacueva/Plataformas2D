@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class extraLife : MonoBehaviour
 {
+    private AudioSource audioSource;
+    public AudioClip clip;
     public GameObject item;
     public string target;
 
@@ -11,6 +13,9 @@ public class extraLife : MonoBehaviour
     {
         if (collision.tag == target)
         {
+            audioSource = GetComponent<AudioSource>();
+            audioSource.clip = clip;
+            audioSource.Play();
             item.SetActive(true);
             gameManager.instance.lifes_current += 1;
             Destroy(gameObject);

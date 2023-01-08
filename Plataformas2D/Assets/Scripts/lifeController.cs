@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class lifeController : MonoBehaviour
 {
-    
+    private AudioSource audioSource;
+    public AudioClip clip;
     public float invencible_time;
     bool invencible;
     Animator anim;
@@ -58,6 +59,9 @@ public class lifeController : MonoBehaviour
 
     IEnumerator Invencible_Corutine()
     {
+        audioSource = GetComponent<AudioSource>();
+        audioSource.clip = clip;
+        audioSource.Play();
         invencible = true;
         anim.SetBool("Damage", true);
         yield return new WaitForSeconds(invencible_time);
