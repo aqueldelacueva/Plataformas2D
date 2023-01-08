@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2046421731588298668}
   - component: {fileID: 2046421731588298675}
   - component: {fileID: 2046421731588298674}
-  - component: {fileID: 2046421731588298673}
+  - component: {fileID: -6753629399725040792}
   m_Layer: 0
   m_Name: "L\xE1pida"
   m_TagString: Untagged
@@ -112,7 +112,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.03, y: 0.76}
   m_EdgeRadius: 0
---- !u!114 &2046421731588298673
+--- !u!114 &-6753629399725040792
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,9 +121,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2046421731588298672}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dec6788a89e9bfb4eaa28b4049991e5f, type: 3}
+  m_Script: {fileID: 11500000, guid: bcaeb3abefa7efa4589cc4edd232269a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1000
-  ignoreInvencible: 1
   target: Player

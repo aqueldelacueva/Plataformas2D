@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
-  bulletDestroy: 2
+  bulletDestroy: 1
 --- !u!82 &3686084983407266277
 AudioSource:
   m_ObjectHideFlags: 0

@@ -17,7 +17,7 @@ public class MenuManager : MonoBehaviour
 
     public void BotonLevel1()
     {
-        SceneManager.LoadScene("Level0");
+        SceneManager.LoadScene("Level1");
     }
 
     public void BotonGimnasio()
