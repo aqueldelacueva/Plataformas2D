@@ -11,7 +11,7 @@ public class lapida : MonoBehaviour
     {
         if (collision.tag == target)
         {
-            gameManager.instance.fire = 0;
+            gameManager.instance.fire = -1;
             gameManager.instance.lifes_current = 0;
         }
 
