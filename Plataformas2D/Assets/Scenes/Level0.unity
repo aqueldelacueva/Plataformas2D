@@ -87781,7 +87781,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1534299744151897213, guid: 1510cab7d10dd16458ad33c828192233, type: 3}
       propertyPath: level
-      value: Gimnasio
+      value: Level1
       objectReference: {fileID: 0}
     - target: {fileID: 1534299744151897215, guid: 1510cab7d10dd16458ad33c828192233, type: 3}
       propertyPath: m_RootOrder
